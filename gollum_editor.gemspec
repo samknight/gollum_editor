@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["sam@samknight.co.uk"]
   s.homepage    = ""
   s.summary     = %q{Gollum text editor}
-  s.description = %q{Use Gollum editor for text areas}
+  s.description = %q{Use the Gollum wiki text editor for text areas}
 
   s.rubyforge_project = "gollum_editor"
 
@@ -17,7 +17,6 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
-  s.add_dependency 'railties', '~> 3.2'
   
   # specify any dependencies here; for example:
   # s.add_development_dependency "rspec"
