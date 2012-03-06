@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = GollumEditor::VERSION
   s.authors     = ["Sam Knight"]
   s.email       = ["sam@samknight.co.uk"]
-  s.homepage    = ""
+  s.homepage    = "http://github.com/samknight/gollum_editor"
   s.summary     = %q{Gollum text editor}
   s.description = %q{Use the Gollum wiki text editor for text areas}
 
