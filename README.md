@@ -1,6 +1,6 @@
 # Gollum Editor
 
-Text editor extracted from [Gollum Wiki](https://github.com/github/gollum) for Rails 3.1+
+A rich text editor using markdown extracted from [Gollum Wiki](https://github.com/github/gollum) for Rails 3.1+
 
 ## Install
 
@@ -25,3 +25,7 @@ Call it from your form builder
 or as a form helper
 
 `gollum_editor @object, :method`
+
+## Output
+
+As this editor will convert your text to Markdown. To output with ruby use a library like [Blue Cloth](https://rubygems.org/gems/bluecloth)
