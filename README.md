@@ -8,6 +8,8 @@ Add this to your GEMFILE
 
 `gem 'gollum_editor'`
 
+`rails g gollum_editor:install`
+
 ## Usage
 
 Include the javascripts and stylesheets
