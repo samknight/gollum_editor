@@ -1,7 +1,11 @@
 module GollumEditor
   module FormHelper
     def gollum_editor(object_name, method, options = {})
-      puts "gollum called"
+      if options[:id]
+        options[:id] << " gollum-editor-body"
+      else
+        options[:id] = "gollum-editor-body"
+      end
       controls = '<div id="gollum-editor-function-bar">
         <div id="gollum-editor-function-buttons">
         <a href="#" id="function-bold" class="function-button" title="Bold">
