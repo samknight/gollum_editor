@@ -1,7 +1,6 @@
 module GollumEditor
   module FormHelper
     def gollum_editor(object_name, method, options = {})
-      puts "gollum called"
       controls = '<div id="gollum-editor-function-bar">
         <div id="gollum-editor-function-buttons">
         <a href="#" id="function-bold" class="function-button" title="Bold">
@@ -63,10 +62,9 @@ module GollumEditor
 
       <span class="jaws"><br></span>'
       input = text_area(object_name, method, options)
-      puts "After input"
       content_tag(:div, (controls.html_safe + input), { :id => 'gollum-editor' })
     end
-    
+
     def self.included(arg)
       ActionView::Helpers::FormBuilder.send(:include, GollumEditor::FormBuilder)
     end
