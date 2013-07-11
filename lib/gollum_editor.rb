@@ -2,7 +2,6 @@ require "gollum_editor/version"
 require "gollum_editor/form_builder"
 require "gollum_editor/form_helper"
 
-puts "send"
 ActionView::Helpers::FormHelper.send(:include, GollumEditor::FormHelper)
 
 module Rails  
