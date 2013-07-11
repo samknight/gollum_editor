@@ -67,7 +67,6 @@ module GollumEditor
 
       <span class="jaws"><br></span>'
       input = text_area(object_name, method, options)
-      puts "After input"
       content_tag(:div, (controls.html_safe + input), { :id => 'gollum-editor' })
     end
     
